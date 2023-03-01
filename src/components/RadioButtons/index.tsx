@@ -3,16 +3,7 @@ import './RadioButton.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faCircleDot } from '@fortawesome/free-solid-svg-icons';
 
-interface RadioButtonProps {
-  allClicked: boolean;
-  setAllClicked: any;
-  registeredClicked: boolean;
-  setRegisteredClicked: any;
-  bookMarkedClicked: boolean;
-  setBookMarkedClicked: any;
-  seatsClicked: boolean;
-  setSeatsClicked: any;
-}
+import { RadioButtonProps } from '../../types';
 
 const RadioButtons: React.FC<RadioButtonProps> = (props: RadioButtonProps): JSX.Element => {
   return (

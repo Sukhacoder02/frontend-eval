@@ -2,11 +2,7 @@ import * as React from 'react';
 import './Filter.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilter, faChevronUp, faChevronDown, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-interface FilterProps {
-  handleDropDown: () => void;
-  dropDown: boolean;
-  setSearchQuery: (value: string) => void;
-}
+import { FilterProps } from '../../types';
 const Filter: React.FC<FilterProps> = (props: FilterProps): JSX.Element => {
   const handleChange = (e: any) => {
     props.setSearchQuery(e.target.value);

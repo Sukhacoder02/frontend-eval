@@ -10,14 +10,7 @@ import {
   filterEventsBySeatsAvailable,
 } from '../../utils/common/filterEvents';
 
-interface CardsProps {
-  // searchKey: string;
-  theme: any;
-  allClicked: boolean;
-  registeredClicked: boolean;
-  bookMarkedClicked: boolean;
-  seatsClicked: boolean;
-}
+import { CardsProps } from '../../types';
 
 const Cards: React.FC<CardsProps> = (props: CardsProps): JSX.Element => {
   const [events, setEvents] = React.useState<EventData[]>();

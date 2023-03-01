@@ -2,11 +2,7 @@ import * as React from 'react';
 import { GET_THEMES, PUT_THEME } from '../../constants/apiEndPoints';
 import makeRequest from '../../utils/MakeRequest';
 import './Footer.css';
-
-interface FooterProps {
-  theme: any;
-  reload: () => void;
-}
+import { FooterProps } from '../../types';
 const Footer: React.FC<FooterProps> = (props: FooterProps): JSX.Element => {
   const [prefferedTheme, setPrefferedTheme] = React.useState('1');
   React.useEffect(() => {
