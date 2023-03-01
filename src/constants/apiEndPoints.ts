@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8080/api/';
+const BASE_URL = 'http://localhost:8000/api';
 
 const EVENTS = '/events';
 const THEMES = '/themes';
@@ -10,14 +10,14 @@ const GET_ALL_EVENTS = {
 
 const GET_SINGLE_EVENT = (eventId: string) => {
   return {
-    url: `${BASE_URL}/${EVENTS}/${eventId}`,
+    url: `${BASE_URL}${EVENTS}/${eventId}`,
     method: 'get',
   };
 };
 
 const PATCH_SINGLE_EVENT = (eventId: string) => {
   return {
-    url: `${BASE_URL}/${EVENTS}/${eventId}`,
+    url: `${BASE_URL}${EVENTS}/${eventId}`,
     method: 'patch',
   };
 };

@@ -1,11 +1,13 @@
 import './Header.css';
 import * as React from 'react';
-
-const Header: React.FunctionComponent = (): JSX.Element => {
+interface HeaderProps {
+  theme: any;
+}
+const Header: React.FC<HeaderProps> = (props: HeaderProps): JSX.Element => {
   return (
-    <nav>
+    <nav className={'theme' + props.theme}>
       <div className="navbar">
-        <h1>Eventify</h1>
+        <h1>EVENTIFY</h1>
       </div>
     </nav>
   );

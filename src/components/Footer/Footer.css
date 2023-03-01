@@ -1,0 +1,62 @@
+footer {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.theme1 {
+  background-color: black;
+}
+.theme2 {
+  background-color: #800080;
+}
+.theme3 {
+  background-color: #0000ff;
+}
+.theme4 {
+  background-color: #9b9999;
+}
+.wrapFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  color: white;
+  font-weight: bolder;
+}
+.themes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  gap: 10px;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.theme {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+#theme1 {
+  background-color: black;
+}
+#theme2 {
+  background-color: blue;
+}
+#theme3 {
+  background-color: #9b9999;
+}
+.save {
+  background-color: #f5f5f5;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bolder;
+}

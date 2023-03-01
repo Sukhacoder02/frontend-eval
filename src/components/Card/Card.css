@@ -1,63 +1,128 @@
-.card {
-  width: 350px;
-  height: 500px;
+.eventCard {
   display: flex;
   flex-direction: column;
+  width: 350px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: large;
+  min-width: 250px;
+}
+.theme1 {
+  background-color: black;
+}
+.theme2 {
+  background-color: #800080;
+}
+.theme3 {
+  background-color: #0000ff;
+}
+.theme4 {
+  background-color: #9b9999;
+}
+
+.eventCard > img {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.eventCard hr {
+  width: 100%;
+  border: 1px white;
+  border-style: solid none none none;
+  margin: 0;
+}
+
+.eventTitle {
+  font-family: 'Big Shoulders Text';
+  font-weight: bold;
+  font-size: x-large;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.eventDescription {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.eventVenue {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  text-align: center;
+  -webkit-box-orient: vertical;
+}
+
+.eventVenue span {
+  font-weight: bold;
+}
+
+.eventDate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  text-align: center;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.eventDate span {
+  font-weight: bold;
+}
+
+.eventButtons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.eventButtons > button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* color: white; */
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-size: 40px;
+}
+.registered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.noSeats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.red {
+  color: #ea8282;
+}
+
+.yellow {
+  color: #ececab;
+}
+
+.green {
+  color: #a0f3ad;
+}
+
+.white {
   color: white;
 }
-.cardImage {
-  width: 100%;
-  height: 45%;
-  object-fit: cover;
-}
-
-.cardImage > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.cardDetails {
-  height: 55%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  gap: 7px;
-  background-color: #ea8282;
-  padding: 5px;
-}
-.reactions {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 5px;
-
-  background-color: #ea8282;
-}
-.register {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.bookmark {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 50%;
-}
-.cardDescription {
-  text-align: center;
-}
-.venue {
-  text-align: center;
-}
-.date {
-  text-align: center;
+.cardPadding {
+  padding: 0 20px;
 }

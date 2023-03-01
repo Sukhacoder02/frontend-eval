@@ -6,11 +6,10 @@ const makeRequest = async (apiEndPoint: any, config = {}, navigate?: NavigateFun
   const requestDetails = {
     url: apiEndPoint.url,
     method: apiEndPoint.method,
-    headers: {
-      Authorization: 'Bearer QWlzaHdhcnlhIE4=',
-    },
     ...config,
   };
+  console.log(requestDetails);
+
   try {
     const { data } = await axios(requestDetails);
     return data;
